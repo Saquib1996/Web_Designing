@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;   
+    }
+    section {
+        height: 344px;
+        /* border: 2px solid red; */
+        margin: 37px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header::before{
+        background: url(https://media.istockphoto.com/id/938430448/photo/ornamental-arabic-lantern-with-burning-candle-glowing-at-night-and-glittering-golden-bokeh.jpg?b=1&s=170667a&w=0&k=20&c=OyNw0RFArewvq7Fc8AavN-lWb7Sil33WWAXjN1iK8dk=) no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.4;
+
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        text-align: center;
+    }
+    .navigation {
+        font-size: 20px;
+        display: flex;
+    }
+    li {
+        list-style: none;
+        padding: 34px 23px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to Coding world</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptates facere ipsam itaque magnam
+                rem tempore corrupti, quibusdam, unde at, ut maiores sapiente amet? Voluptatibus numquam facilis earum
+                asperiores ipsum.
+                Accusantium tenetur ea veniam expedita, iste, ab hic sit iure nihil magni corrupti fugit, maiores eius
+                illo mollitia aliquam quisquam aliquid repellat? Excepturi temporibus magnam molestias, voluptatibus nam
+                aut omnis?
+                Nisi ea itaque labore unde soluta blanditiis nulla similique sequi dolorem ut natus nostrum eum, optio
+                nesciunt iure laudantium quo beatae maxime voluptates? Voluptate vel dicta, unde possimus quidem
+                obcaecati.
+                Nulla amet quasi eos consequuntur! Reprehenderit cupiditate minima, voluptatum, vel dicta voluptates
+                eveniet quisquam tempora vitae nostrum quasi quidem debitis? Minus ipsa deleniti dolorum mollitia veniam
+                sequi asperiores itaque incidunt?</p>
+        </section>
+</body>
+
+</html>
