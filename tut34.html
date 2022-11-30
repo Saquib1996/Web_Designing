@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        background-color: aqua;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        /* box-shadow: 10px 10px 10px 10px red; */
+        /* box-shadow: inset 10px 10px 10px green; */
+    }
+    .card h3{
+        text-shadow: 3px 4px red;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h3>This is C++ course</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati. Odio fugit beatae quis commodi nihil? Accusamus culpa officiis nulla perspiciatis pariatur, nisi, adipisci aliquam ratione laboriosam eaque cum aspernatur.</p>
+        </div>
+        <div class="card" id="card-2">
+           <h3>This HTML course</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati. Odio fugit beatae quis commodi nihil? Accusamus culpa officiis nulla perspiciatis pariatur, nisi, adipisci aliquam ratione laboriosam eaque cum aspernatur.</p> 
+        </div>
+        <div class="card" id="card-3">
+           <h3>This is JavaScript course</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, obcaecati. Odio fugit beatae quis commodi nihil? Accusamus culpa officiis nulla perspiciatis pariatur, nisi, adipisci aliquam ratione laboriosam eaque cum aspernatur.</p> 
+        </div>
+    </div>
+</body>
+</html>
