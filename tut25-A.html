@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    .parent{
+        border: 1px solid red;
+        padding: 90px;
+        width: 50%; 
+        margin:150px;
+        position: relative;
+    }
+    #item1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display:inline-block;
+    }
+    #item2{
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+            display:inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* position: relative;
+            top: 50px;
+            left: 50px;
+            z-index:22; */
+    }
+    #item3{
+            width: 100px;
+            height: 100px;
+            background-color:black;
+            display:inline-block;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div id="item1"></div>
+        <div id="item2"></div>
+        <div id="item3"></div>
+    </div>
+</body>
+</html>
